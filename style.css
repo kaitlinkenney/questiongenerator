@@ -1,0 +1,28 @@
+#question {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    color: rgb(8, 8, 170);
+    font-size: 30px;
+}
+
+#option-list {
+    padding-left: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#timer {
+    font-family: fantasy;
+    color: gray;
+}
+
+#question-result {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkgray;
+    text-align: center;
+}
+
+#highscoresbtn {
+    margin-left: 700px;
+}
