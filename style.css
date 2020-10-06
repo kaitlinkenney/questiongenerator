@@ -7,14 +7,18 @@
 }
 
 #option-list {
-    padding-left: 600px;
+    padding-left: 500px;
+    padding-bottom: 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+
 }
 
 #timer {
     font-family: fantasy;
     color: gray;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 #question-result {
@@ -24,5 +28,15 @@
 }
 
 #highscoresbtn {
-    margin-left: 700px;
+    margin-left: 600px;
+}
+
+.card {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+#option-list:hover {
+    background-color: lightskyblue;
 }
