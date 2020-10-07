@@ -55,6 +55,7 @@ var correctCount = 0;
 var time = 105;
 var intervalId;
 
+
 function endQuiz() {
 
   clearInterval(intervalId);
@@ -96,9 +97,6 @@ function showHighScore() {
     return b.score - a.score;
 
   });
-
-
-
 
   var contentUL = document.createElement("ul");
 
