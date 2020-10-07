@@ -40,7 +40,8 @@ var questions = [
   var optionListEl = document.querySelector("#option-list");
   var questionResultEl = document.querySelector("#question-result");
   var timerEl = document.querySelector("#timer");
-  var highscoresbtn = document.querySelector("#highscoresbtn");
+  //var highscoresbtn = document.querySelector("#highscoresbtn");
+  var highscorediv = document.querySelector(".highscores");
 
 
   var questionIndex = 0;
@@ -51,15 +52,22 @@ var questions = [
   var intervalId;
 
   function endQuiz() {
+
     clearInterval(intervalId);
     var body = document.body;
     body.innerHTML = "Game over, You scored " + correctCount;
+    var highscoresbtn = document.createElement("button");
+      highscoresbtn.textContent = "High Scores";
+      highscoresbtn.setAttribute("class", "btn btn-outline-secondary")
+      highscoresbtn.setAttribute("id", "highscoresbtn")
+      highscorediv.appendChild(highscoresbtn);
+
     
     highscoresbtn.addEventListener("click", showHighScore);
       clearInterval(intervalId);
       document.body.appendChild(highscoresbtn);
 
-    setTimeout (showHighScore, 2);
+   // setTimeout (showHighScore, 2);
   }
 
 
