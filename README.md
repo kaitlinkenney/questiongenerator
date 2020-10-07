@@ -20,3 +20,4 @@ Create a quiz.
 link to deployed application: https://kaitlinkenney.github.io/questiongenerator/
 
 screenshot:
+<img width="950" alt="screenshotquestiongenerator" src="https://user-images.githubusercontent.com/67657449/95372398-7e83e380-08a9-11eb-81b0-217e6bf70cf0.png">
