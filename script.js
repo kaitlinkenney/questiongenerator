@@ -1,13 +1,13 @@
 var questions = [
   {
     question: "Commonly used data types DO NOT include:",
-    choices: ["strings", "booleans", "alerts", "numbers"],
-    answer: "alerts",
+    choices: ["Strings", "Booleans", "Alerts", "Numbers"],
+    answer: "Alerts",
   },
   {
     question: "The condition in an if / else statement is enclosed within ____.",
-    choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-    answer: "parentheses",
+    choices: ["Quotes", "Curly brackets", "Parentheses", "Square brackets"],
+    answer: "Parentheses",
   },
   {
     question: "What is the biggest island in the world?",
@@ -21,13 +21,13 @@ var questions = [
   },
   {
     question: "What is a good topping for beef tacos?",
-    choices: ["ketchup", "Adobo", "lemon pepper", "mayonnaise"],
+    choices: ["Ketchup", "Adobo", "Lemon pepper", "Mayonnaise"],
     answer: "Adobo",
   },
   {
     question: "In Breaking Bad, what subject did Walter White teach?",
-    choices: ["chemistry", "biology", "history", "French"],
-    answer: "chemistry",
+    choices: ["Chemistry", "Biology", "History", "French"],
+    answer: "Chemistry",
   },
   {
     question: "Which of the following is an anime film?",
