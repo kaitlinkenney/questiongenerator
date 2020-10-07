@@ -4,36 +4,41 @@ var questions = [
     choices: ["strings", "booleans", "alerts", "numbers"],
     answer: "alerts",
   },
-  // {
-  //   question: "The condition in an if / else statement is enclosed within ____.",
-  //   choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-  //   answer: "parentheses",
-  // },
-  //   {
-  //     question: "What is the biggest island in the world?",
-  //     choices: ["Greenland", "Antarctica", "Australia", "New Zealand"],
-  //     answer: "Greenland",
-  //   },
-  //   {
-  //     question: "Who saved James Potter's life in the Harry Potter series?",
-  //     choices: ["Dumbledore", "Ron Weasley", "Snape", "Sirius Black"],
-  //     answer: "Snape",
-  //   },
-  //   {
-  //     question: "What is a good topping for beef tacos?",
-  //     choices: ["ketchup", "Adobo", "lemon pepper", "mayonnaise"],
-  //     answer: "Adobo",
-  //   }
-  //   {
-  //     question: "In Breaking Bad, what subject did Walter White teach?",
-  //     choices: ["chemistry", "biology", "history", "French"],
-  //     answer: "chemistry",
-  //   },
-  //   {
-  //     question: "Which of the following is an anime film?",
-  //     choices: ["Family Guy", "Attack on Titan", "Bob's Burgers", "Vampire Diaries"],
-  //     answer: "Attack on Titan",
-  //   }
+  {
+    question: "The condition in an if / else statement is enclosed within ____.",
+    choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
+    answer: "parentheses",
+  },
+  {
+    question: "What is the biggest island in the world?",
+    choices: ["Greenland", "Antarctica", "Australia", "New Zealand"],
+    answer: "Greenland",
+  },
+  {
+    question: "Who saved James Potter's life in the Harry Potter series?",
+    choices: ["Dumbledore", "Ron Weasley", "Snape", "Sirius Black"],
+    answer: "Snape",
+  },
+  {
+    question: "What is a good topping for beef tacos?",
+    choices: ["ketchup", "Adobo", "lemon pepper", "mayonnaise"],
+    answer: "Adobo",
+  },
+  {
+    question: "In Breaking Bad, what subject did Walter White teach?",
+    choices: ["chemistry", "biology", "history", "French"],
+    answer: "chemistry",
+  },
+  {
+    question: "Which of the following is an anime film?",
+    choices: ["Family Guy", "Attack on Titan", "Bob's Burgers", "Vampire Diaries"],
+    answer: "Attack on Titan",
+  },
+  {
+    question: "True or false: Sunflowers emit a soundwave that the human ear does not pick up!",
+    choices: ["True", "False"],
+    answer: "True",
+  },
 ];
 
 var questionEl = document.querySelector("#question");
@@ -47,7 +52,7 @@ var questionIndex = 0;
 var correctCount = 0;
 
 
-var time = 30;
+var time = 105;
 var intervalId;
 
 function endQuiz() {
@@ -75,21 +80,21 @@ function showHighScore() {
 
 
   var high_scores = localStorage.getItem("scores");
-  
+
 
   if (!high_scores) {
     high_scores = [];
   } else {
     high_scores = JSON.parse(high_scores);
   }
-  
+
   high_scores.push({ name: name, score: correctCount });
 
   localStorage.setItem("scores", JSON.stringify(high_scores));
-  
+
   high_scores.sort(function (a, b) {
     return b.score - a.score;
-    
+
   });
 
 
