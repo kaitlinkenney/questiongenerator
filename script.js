@@ -154,7 +154,7 @@ function checkAnswer(event) {
   if (event.target.matches("li")) {
     var answer = event.target.textContent;
     if (answer === questions[questionIndex].answer) {
-      questionResultEl.textContent = "Correct";
+      questionResultEl.textContent = "Correct"
       correctCount++;
     } else {
       questionResultEl.textContent = "Incorrect";
@@ -162,7 +162,7 @@ function checkAnswer(event) {
       timerEl.textContent = time;
     }
   }
-  setTimeout(nextQuestion, 2000);
+  setTimeout(nextQuestion, 0);
 }
 
 renderQuestion();
